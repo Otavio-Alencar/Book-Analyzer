@@ -31,7 +31,7 @@ export const DateFormat = () => {
   const month = months[monthnumber]
   const weekday = week[day]
   return (
-    <p className="text-black">
+    <p className="text-sm text-black">
       {weekday}, {month} {dayMonth}, {year}
     </p>
   )

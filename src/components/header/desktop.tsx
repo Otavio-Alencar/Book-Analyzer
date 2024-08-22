@@ -22,9 +22,11 @@ export const Desktop = ({
         <SheetMenu links={links} />
 
         {/* search */}
-        <div className="hidden h-full w-56 items-center justify-center gap-5 md:flex">
+        <div className="hidden h-full w-72 items-center justify-start gap-5 md:flex">
           <Search />
-          <p className="text-sm font-bold text-black">BOOK REVIEW</p>
+          <p className="whitespace-nowrap text-sm font-bold text-black">
+            BOOK REVIEW
+          </p>
         </div>
 
         {/* logo and filter  */}

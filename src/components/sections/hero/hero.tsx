@@ -15,7 +15,7 @@ export const Hero = ({ className, links }: heroProps) => {
         <TabsBook links={links} />
       </div>
       <div>
-        <BestSellers />
+        <BestSellers listname="e-book-fiction" />
       </div>
     </div>
   )
