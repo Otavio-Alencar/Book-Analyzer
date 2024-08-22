@@ -2,7 +2,6 @@ import { cn } from '@/utils/cn'
 import { heroProps } from '.'
 
 import { TabsBook } from './client-components/tabsList'
-import { BestSellers } from '@/components/requests/bestsellers'
 
 export const Hero = ({ className, links }: heroProps) => {
   return (
@@ -14,9 +13,7 @@ export const Hero = ({ className, links }: heroProps) => {
       <div>
         <TabsBook links={links} />
       </div>
-      <div>
-        <BestSellers listname="e-book-fiction" />
-      </div>
+      <div></div>
     </div>
   )
 }

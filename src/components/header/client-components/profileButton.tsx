@@ -6,7 +6,7 @@ import { User } from 'lucide-react'
 export const ProfileButton = () => {
   return (
     <button
-      className="md:hidden"
+      className="lg:hidden"
       onClick={() => {
         toast({
           title: 'No profile',

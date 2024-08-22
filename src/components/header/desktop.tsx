@@ -22,7 +22,7 @@ export const Desktop = ({
         <SheetMenu links={links} />
 
         {/* search */}
-        <div className="hidden h-full w-72 items-center justify-start gap-5 md:flex">
+        <div className="hidden h-full w-72 items-center justify-start gap-5 lg:flex">
           <Search />
           <p className="whitespace-nowrap text-sm font-bold text-black">
             BOOK REVIEW
@@ -35,7 +35,7 @@ export const Desktop = ({
         </div>
         <ProfileButton />
         {/* date  */}
-        <div className="hidden text-black md:flex">
+        <div className="hidden text-black lg:flex">
           <DateFormat />
         </div>
       </div>

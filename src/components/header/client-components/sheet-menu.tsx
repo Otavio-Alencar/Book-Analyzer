@@ -16,7 +16,7 @@ type Props = {
 export const SheetMenu = ({ links }: Props) => {
   return (
     <Sheet>
-      <SheetTrigger className="md:hidden">
+      <SheetTrigger className="lg:hidden">
         <MenuIcon />
       </SheetTrigger>
       <SheetContent side={'left'}>

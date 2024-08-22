@@ -1,7 +1,7 @@
-'use client'
-
+import { BestSellers } from '@/components/requests/bestsellers'
 import { Separator } from '@/components/ui/separator'
-import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { BestSellersList } from '@/data/bestsellerList'
 
 type Props = {
   links: {
@@ -21,7 +21,12 @@ export const TabsBook = ({ links }: Props) => {
           </TabsTrigger>
         ))}
       </TabsList>
-      <Separator />
+      <Separator className="mb-5" />
+      <TabsContent value="Best Sellers" className="flex flex-col gap-8">
+        {BestSellersList.map((item) => (
+          <BestSellers key={BestSellersList.length} listname={item.listname} />
+        ))}
+      </TabsContent>
     </Tabs>
   )
 }
