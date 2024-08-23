@@ -1,5 +1,5 @@
+import { ExitLink } from '@/components/exitlink'
 import { fetchReviews } from '@/lib/nytReviews'
-import Link from 'next/link'
 
 type Props = {
   params: {
@@ -25,24 +25,14 @@ const Page = async ({ params }: Props) => {
             </div>
             <p className="text-center">{review.results[0].summary}</p>
             <div>
-              <Link
-                className="rounded-md border border-slate-500 px-4 py-2 text-slate-500"
-                href={`/`}
-              >
-                Exit
-              </Link>
+              <ExitLink />
             </div>
           </div>
         </div>
       ) : (
         <div className="container mt-10 flex w-full flex-col items-center justify-center">
           <p>Review not found</p>
-          <Link
-            className="rounded-md border border-slate-500 px-4 py-2 text-slate-500"
-            href={`/`}
-          >
-            Exit
-          </Link>
+          <ExitLink />
         </div>
       )}
     </div>
