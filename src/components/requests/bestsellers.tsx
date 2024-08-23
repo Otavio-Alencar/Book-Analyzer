@@ -46,13 +46,13 @@ export const BestSellers = async ({ listname }: BestSellersProps) => {
                 <p className="text-xs text-gray-400">
                   {item.weeks_on_list} WEEKS ON THE LIST
                 </p>
-                <div className="font-bold">{item.title}</div>
+                <div className="text-sm font-bold md:text-lg">{item.title}</div>
                 <p className="">By {item.author}</p>
               </div>
               <div className="hidden md:flex">
                 <p className="text-sm">{item.description}</p>
               </div>
-              <div className="mb-2 flex gap-3">
+              <div className="mb-2 flex flex-col gap-3 md:flex-row">
                 <a
                   className="rounded-md bg-slate-500 px-4 py-2 text-white"
                   href={item.buy_links[0].url}

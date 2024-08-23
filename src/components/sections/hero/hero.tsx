@@ -7,8 +7,14 @@ export const Hero = ({ className, links }: heroProps) => {
   return (
     <div className={cn('bg-white', className)}>
       <div>
-        <p>ARTS</p>
-        <h1 className="text-3xl font-bold md:text-5xl">Book Review</h1>
+        <p className="text-sm font-semibold">BOOKS</p>
+        <h1 className="text-xl font-semibold md:text-4xl">
+          The New York Times Best Sellers
+        </h1>
+        <p className="text-xs text-slate-500 md:text-sm">
+          Authoritatively ranked lists of books sold in the United States,
+          sorted by format and genre.
+        </p>
       </div>
       <div>
         <TabsBook links={links} />

@@ -2,12 +2,11 @@ import { cn } from '@/utils/cn'
 import { HeaderProps } from '.'
 import { DateFormat } from '@/utils/date'
 import { SheetMenu } from './client-components/sheet-menu'
-import { Search } from './client-components/search'
+
 import { ProfileButton } from './client-components/profileButton'
 export const Desktop = ({
   classname,
   logo,
-  links,
   headerHeight,
 }: HeaderProps & { headerHeight: string }) => {
   return (
@@ -19,13 +18,13 @@ export const Desktop = ({
       )}
     >
       <div className="container m-auto flex h-full w-full items-center justify-between">
-        <SheetMenu links={links} />
+        <SheetMenu />
 
         {/* search */}
         <div className="hidden h-full w-72 items-center justify-start gap-5 lg:flex">
-          <Search />
+          {/* <Search /> */}
           <p className="whitespace-nowrap text-sm font-bold text-black">
-            BOOK REVIEW
+            BOOKS REVIEW
           </p>
         </div>
 
